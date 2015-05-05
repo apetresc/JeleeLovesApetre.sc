@@ -1,1 +1,9 @@
+body {
+	background-color: #FAF7EB;
+}
 
+#content {
+	background-color: white;
+
+	height: 100%;
+}
