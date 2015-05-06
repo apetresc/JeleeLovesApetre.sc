@@ -221,6 +221,66 @@ body {
 	margin-top: 10px;
 }
 
+#gifts-row {
+	margin-top: 40px;
+	padding-left: 5%;
+}
+
+#gifts-row h1 {
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #B88E16;	
+	letter-spacing: 2;
+}
+
+#gifts-row p {
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+	font-weight: lighter;
+	color: #525252;
+	letter-spacing: 1.05;
+	line-height: 1.5;
+	text-align: left;
+}
+
+#gifts-instructions-content {
+	display: table;
+	width: 100%;
+
+	text-align: center;
+}
+
+#gifts-instructions-content-inner {
+	display: table-cell;
+	vertical-align: middle;
+
+	padding-right: 40px;
+}
+
+#gifts-logos-content {
+	display: table;
+	width: 100%;
+	height: 241px;
+
+	text-align: center;
+}
+
+#gifts-logos-content-inner {
+	display: table-cell;
+	vertical-align: middle;
+	height: 241px;
+}
+
+.logo-row {
+	padding-right: 20px;
+}
+
+#first-logo-row {
+	padding-bottom: 10px;
+}
+
+
 #footer-row {
 	text-align: center;
 	margin-top: 20px;
@@ -231,3 +291,4 @@ body {
 	font-style: italic;
 	color: #E0CA82;
 }
+
