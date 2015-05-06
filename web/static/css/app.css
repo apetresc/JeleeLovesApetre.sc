@@ -143,33 +143,48 @@ body {
 }
 
 #church-row {
-	padding-top: 40px;
+	margin-top: 40px;
+}
+
+.venue-row {
+	padding-top: 20px;
 	height: 390px;
 }
 
-#church-row h1 {
+.venue-row h1 {
 	color: #B88E16;
 
 	font-family: 'Great Vibes', cursive;
 	font-size: 48px;
 }
 
-#church-row h2 {
+.venue-row h2 {
 	color: #525252;
 
 	font-family: 'Source Sans Pro';
-	font-size: 18px;
+	font-size: 16px;
 
 	text-transform: uppercase;
 	letter-spacing: 3;
 	margin-top: 0px;
 }
 
-#church-directions {
-	padding-left: 5%;
+.venue-row p {
+	font-family: 'Source Sans Pro';
+	font-size: 14px;
+	letter-spacing: 1.05;
+	line-height: 1.3;
+	color: #B0B0B0;
+
+	margin-top: 25px;
 }
 
-#church-directions-content {
+.venue-directions {
+	padding-left: 5%;
+	height: 350px;
+}
+
+.venue-directions-content {
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -177,27 +192,42 @@ body {
 	text-align: center;
 }
 
-#church-directions-content a:link, a:visited {
+.venue-directions-content a:link, a:visited {
 	font-style: italic;
 	color: #B88E16;
 	letter-spacing: 2;
 }
 
-#church-directions-content a:hover {
+.venue-directions-content a:hover {
 	opacity: 0.7;
 }
 
-#church-directions-content-inner {
+.venue-directions-content-inner {
 	display: table-cell;
 	vertical-align: middle;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#church-picture {
+.venue-picture {
 	text-align: center;
 }
 
-#church-picture img {
+.venue-picture img {
 	height: 350px;
+}
+
+.section-divider {
+	margin-top: 10px;
+}
+
+#footer-row {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	font-family: 'Source Sans Pro';
+	font-size: 14px;
+	font-style: italic;
+	color: #E0CA82;
 }
