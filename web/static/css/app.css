@@ -289,6 +289,124 @@ body {
 	padding-bottom: 10px;
 }
 
+#rsvp-row {
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#rsvp-row-header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#rsvp-row-header h1 {
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #B88E16;	
+	letter-spacing: 2;
+}
+
+.rsvp-form-row {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+#rsvp-form label {
+	color: #B0B0B0;
+	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
+	letter-spacing: 2;
+	margin-bottom: 5px;
+}
+
+#rsvp-form input[type=radio]:not(old){
+  width   : 42px;
+  margin-left: -5px;
+  padding : 0;
+  opacity : 0;
+}
+
+#rsvp-form input[type=radio]:not(old) + label {
+  display      : inline-block;
+  margin-left  : -42px;
+  padding-left : 64px;
+  background   : url('../img/checkbox.png') no-repeat 0 0;
+  line-height  : 42px;
+}
+
+#rsvp-form input[type=radio].yes:not(old):checked + label {
+  background-position : 0 -42px;
+}
+
+#rsvp-form input[type=radio].no:not(old):checked + label {
+  background-position : 0 -84px;
+}
+
+#rsvp-second-row .radio-label {
+	color: #525252; 
+	text-transform: none; 
+	font-style: italic;
+	letter-spacing: 0.5;
+	font-size: 18px;
+}
+
+#rsvp-third-row .radio-label {
+	color: #525252; 
+	text-transform: none; 
+	font-style: italic;
+	letter-spacing: 0.5;
+	font-size: 18px;
+}
+
+#rsvp-form input, textarea {
+	box-shadow: none;
+	resize: none;	
+
+	font-family: 'Source Sans Pro';
+	letter-spacing: 1.2;
+}
+
+
+#rsvp-form-second-row {
+}
+
+#rsvp-dietary-input {
+	width: 100%;
+	height: 100px;
+}
+
+#rsvp-fourth-row {
+	width: 100%;
+	text-align: center;
+	display: table;
+}
+
+#rsvp-fourth-row a {
+	display: table-cell;
+	width: 150px;
+	color: #E0CA82;
+	border: #E0CA82 solid 2px;
+
+	font-family: 'Source Sans Pro';
+	font-size: 18px;
+	font-style: italic;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	-webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+	-moz-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+#rsvp-fourth-row a:hover {
+	background-color: #E0CA82;
+	color: white;
+}
+
 #contact-row {
 	position: relative;
 	text-align: center;
@@ -321,7 +439,7 @@ body {
 	text-align: left;
 
 	font-size: 18px;
-	letter-spacing: 1.2;
+	letter-spacing: 2.5;
 	text-transform: uppercase;
 }
 
