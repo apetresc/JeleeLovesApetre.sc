@@ -138,6 +138,14 @@ body {
 	float: left;
 }
 
+.top-triangle-with-line .top-triangle {
+	float: left;
+}
+
+.top-triangle-with-line .divider {
+	margin-top: -32px;
+}
+
 .bottom-triangle-with-line .divider {
 	margin-top: 16px;
 }
@@ -224,6 +232,7 @@ body {
 #gifts-row {
 	margin-top: 40px;
 	padding-left: 5%;
+	margin-bottom: 100px;
 }
 
 #gifts-row h1 {
