@@ -155,16 +155,18 @@
 						</H1>
 					</DIV>
 
-					<FORM ID="rsvp-form" ACTION="/" METHOD="POST">
+					<FORM ID="rsvp-form" ACTION="http://formspree.io/apetresc@gmail.com" TARGET="hidden-frame" METHOD="POST">
+						<IFRAME NAME="hidden-frame" CLASS="hide"></IFRAME>
+						<INPUT TYPE="hidden" NAME="_cc" VALUE="lee.j.dsgn@gmail.com" />
 						<DIV ID="rsvp-first-row" CLASS="row full-width rsvp-form-row">
 							<DIV ID="rsvp-name" CLASS="small-12 medium-6 large-6 columns">
 								<LABEL FOR="rsvp-name-input">Full Name</LABEL>
-								<INPUT ID="rsvp-name-input" TYPE="text"></INPUT>
+								<INPUT ID="rsvp-name-input" NAME="rsvp-name-input" TYPE="text"></INPUT>
 							</DIV>
 
 							<DIV ID="rsvp-email" CLASS="small-12 medium-6 large-6 columns">
 								<LABEL FOR="rsvp-email-input">Email Address</LABEL>
-								<INPUT ID="rsvp-email-input" TYPE="text"></INPUT>
+								<INPUT ID="rsvp-email-input" NAME="rsvp-email-input" TYPE="text"></INPUT>
 							</DIV>
 						</DIV>
 
@@ -175,12 +177,12 @@
 						<DIV ID="rsvp-second-row" CLASS="row full-width rsvp-form-row">
 							<DIV ID="rsvp-coming" CLASS="small-12 medium-12 large-12 columns">
 								<LABEL>Will we see you at the ceremony?</LABEL>
-								<INPUT ID="rsvp-coming-yes" NAME="rsvp-coming-input" TYPE="radio" CLASS="yes" />
+								<INPUT ID="rsvp-coming-yes" NAME="rsvp-coming-input" TYPE="radio" VALUE="yes" CLASS="yes" />
 								<LABEL FOR="rsvp-coming-yes" CLASS="radio-label">
 									Yes, of course.
 								</LABEL>
 								<BR />
-								<INPUT ID="rsvp-coming-no" NAME="rsvp-coming-input" TYPE="radio" CLASS="no" />
+								<INPUT ID="rsvp-coming-no" NAME="rsvp-coming-input" TYPE="radio" VALUE="no" CLASS="no" />
 								<LABEL FOR="rsvp-coming-no" CLASS="radio-label">
 									Regrettably, no.
 								</LABEL>
@@ -194,12 +196,12 @@
 						<DIV ID="rsvp-third-row" CLASS="row full-width rsvp-form-row">
 							<DIV ID="rsvp-dinner" CLASS="small-12 medium-6 large-6 columns">
 								<LABEL>Will you be joining us for dinner?</LABEL>
-								<INPUT ID="rsvp-dinner-yes" NAME="rsvp-dinner-input" TYPE="radio" CLASS="yes" />
+								<INPUT ID="rsvp-dinner-yes" NAME="rsvp-dinner-input" TYPE="radio" VALUE="yes" CLASS="yes" />
 								<LABEL FOR="rsvp-dinner-yes" CLASS="radio-label">
 									Yes, feed me! :D
 								</LABEL>
 								<BR />
-								<INPUT ID="rsvp-dinner-no" NAME="rsvp-dinner-input" TYPE="radio" CLASS="no" />
+								<INPUT ID="rsvp-dinner-no" NAME="rsvp-dinner-input" TYPE="radio" VALUE="no" CLASS="no" />
 								<LABEL FOR="rsvp-dinner-no" CLASS="radio-label">
 									Sorry... :(
 								</LABEL>
@@ -207,13 +209,13 @@
 
 							<DIV ID="rsvp-dietary" CLASS="small-12 medium-6 large-6 columns">
 								<LABEL FOR="rsvp-dietary-input">Dietary Restrictions?</LABEL>
-								<TEXTAREA ID="rsvp-dietary-input" ></TEXTAREA>
+								<TEXTAREA NAME="rsvp-dietary-input" ID="rsvp-dietary-input" ></TEXTAREA>
 							</DIV>
 						</DIV>
 
 						<DIV ID="rsvp-fourth-row" CLASS="row full-width">
-							<A HREF="#">
-								<DIV ID="rsvp-submit">
+							<A>
+								<DIV ID="rsvp-submit" ONCLICK="document.getElementById('rsvp-form').submit(); document.getElementById('rsvp-submit').innerHTML = 'Submitted!';">
 									Submit
 								</DIV>
 							</A>

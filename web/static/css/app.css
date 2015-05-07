@@ -370,6 +370,13 @@ body {
 	letter-spacing: 1.2;
 }
 
+.hide {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 1px;
+	height: 1px;
+}
 
 #rsvp-form-second-row {
 }
@@ -397,7 +404,7 @@ body {
 
 	padding-top: 10px;
 	padding-bottom: 10px;
-	
+
 	-webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 	-moz-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
